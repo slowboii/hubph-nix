@@ -1,0 +1,46 @@
+:root {
+    --primar-farge-bla: rgb(10, 151, 217);       /* Blå: PMS 7461C */
+    --primar-farge-marinebla: rgb(25, 72, 106);  /* Marineblå: PMS 294C */
+    --primar-farge-lysebla: rgb(38, 189, 226);    /* Lyseblå: PMS 638C */
+    
+    --sekundar-farge-lysgra: rgb(241, 241, 241);  /* Lys grå: PMS Cool Gray 1C */
+    --sekundar-farge-svart: rgb(0, 0, 0);          /* Svart */
+}
+
+/* Eksempel på bruk av fargene */
+.element {
+    background-color: var(--primar-farge-bla);
+    color: var(--sekundar-farge-svart);
+}
+
+.element-marine {
+    background-color: var(--primar-farge-marinebla);
+}
+
+.element-lyse {
+    background-color: var(--primar-farge-lysebla);
+}
+
+.element-lysgra {
+    background-color: var(--sekundar-farge-lysgra);
+}
+/*Fargekoder og variabler laget av ChatGPT*/
+
+body{
+    
+}
+
+.omoss-header {
+    background-color: red;
+    height: 50vh;
+    max-height: 100vh;
+    
+}
+
+.omoss-title{
+    right: auto;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    border: 5px black solid;
+}
