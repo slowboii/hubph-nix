@@ -2,7 +2,7 @@ let app = document.getElementById('app');
 let model = {
     app : {
         title: 'HUB Phønix',
-        currentPage: 'hjem',
+        currentPage: 'kontakt',
         darkMode: false,
     },
     inputs: {

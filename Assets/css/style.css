@@ -2,7 +2,7 @@
     --primar-farge-bla: rgb(10, 151, 217);       /* Blå: PMS 7461C */
     --primar-farge-marinebla: rgb(25, 72, 106);  /* Marineblå: PMS 294C */
     --primar-farge-lysebla: rgb(38, 189, 226);    /* Lyseblå: PMS 638C */
-    
+
     --sekundar-farge-lysgra: rgb(241, 241, 241);  /* Lys grå: PMS Cool Gray 1C */
     --sekundar-farge-svart: rgb(0, 0, 0);          /* Svart */
 }
@@ -27,14 +27,15 @@
 /*Fargekoder og variabler laget av ChatGPT*/
 
 body{
-    
+
 }
 
-.omoss-header {
+/* changed from om-oss-header to generally header for consistency throughout the pages */
+.header {
     background-color: red;
-    height: 50vh;
+    height: 30vh;
     max-height: 100vh;
-    
+
 }
 
 .omoss-title{
@@ -43,4 +44,70 @@ body{
     display: flex;
     justify-content: center;
     border: 5px black solid;
+}
+
+.kontakt{
+    column-count: 2;
+    column-gap: 50px;
+    gap: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.kontakt aside{
+    border-right: 2px solid var(--primar-farge-bla);
+    margin: 15px;
+    width: min(40%, 500px);
+    height: 60vh;
+
+
+}
+.kontakt aside iframe{
+    width: 90%;
+    height: 40vh;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.kontakt-form {
+    position: relative;
+    padding: 15px;
+    left: 15px;
+    border: 2px solid var(--primar-farge-bla);
+    border-radius: 10px;
+    width: min(50%, 800px);
+    justify-content: space-between;
+    top: 15px;
+    font-size: 1.5em;
+}
+
+.kontakt-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    width: 95%;
+    gap: 5px;
+}
+
+.kontakt-form form input,
+.kontakt-form form textarea,
+.kontakt-form form button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primar-farge-bla);
+    width: 100%;
+    
+}
+
+.kontakt-form form textarea {
+    grid-column: span 2;
+    height: 10em;
+}
+
+.kontakt-form form button {
+    grid-column: span 2;
+    background-color: var(--primar-farge-lysebla);
+    color: var(--sekundar-farge-svart);
+    align-self: flex-start;
 }
