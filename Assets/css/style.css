@@ -1,7 +1,7 @@
 :root {
     --primar-farge-bla: rgb(10, 151, 217);       /* Blå: PMS 7461C */
     --primar-farge-marinebla: rgb(25, 72, 106);  /* Marineblå: PMS 294C */
-    --primar-farge-lysebla: rgb(38, 189, 226);    /* Lyseblå: PMS 638C */
+    --primar-farge-lysebla: rgb(40, 188, 226);    /* Lyseblå: PMS 638C */
 
     --sekundar-farge-lysgra: rgb(241, 241, 241);  /* Lys grå: PMS Cool Gray 1C */
     --sekundar-farge-svart: rgb(0, 0, 0);          /* Svart */
@@ -26,24 +26,42 @@
 }
 /*Fargekoder og variabler laget av ChatGPT*/
 
+.navbar-brand img{
+    height: 5vh;
+    object-fit: fill;
+    object-position: center;
+}
+
 body{
 
 }
 
 /* changed from om-oss-header to generally header for consistency throughout the pages */
 .header {
-    background-color: red;
     height: 30vh;
     max-height: 100vh;
-
+    background-color: var(--primar-farge-bla);
 }
-
-.omoss-title{
-    right: auto;
-    left: auto;
-    display: flex;
+.cover{
+    background-color: rgba(40, 189, 226, 0.5);
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    box-shadow: inset 0 0 1em 0 var(--primar-farge-marinebla);
+}
+.header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.header-title{
+    position: absolute;
+    padding: 1em;
     justify-content: center;
-    border: 5px black solid;
+    top: 10vh;
+    color: var(--sekundar-farge-svart);
+    -webkit-text-stroke: 0.05em var(--sekundar-farge-lysgra);
 }
 
 .kontakt{

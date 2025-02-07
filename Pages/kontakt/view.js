@@ -2,9 +2,7 @@ function kontaktView(){
 
     model.app.currentpage = 'omoss';
         app.innerHTML = /*html*/ `
-        <header class="header">
-            <h1>Kontakt Oss</h1>
-        </header>
+        ${header('Kontakt oss')}
         <body>
             <div class="kontakt">
                 <aside>

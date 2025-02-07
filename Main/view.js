@@ -12,3 +12,21 @@ function updateView(page){
         break;
     }
 }
+
+function header(headerText){
+    let html = /*HTML*/ `
+    <header class="header"> 
+    <div class="cover"></div>
+    <img src='Assets/img/hub_header.jpg'>
+        <div class="header-title">
+            <h1>
+            ${headerText}
+            </h1>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    `
+    return html;
+}

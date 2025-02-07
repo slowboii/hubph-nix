@@ -7,7 +7,7 @@ let model = {
     },
     inputs: {
         kontaktOss: {
-
+            // ser ikke grunnen til å implementere dette siden vi trenger bare å lage en mal for nettsiden 
         },
     },
     data: {
